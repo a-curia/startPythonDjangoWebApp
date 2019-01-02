@@ -5,8 +5,8 @@ def home(request):
     return render(request, "home.html", {})
 
 def about(request):
-    my_name = "Hello my name is A"
-    return render(request, "about.html", {"myKey":my_name})
+    from pages.namer import myFunction
+    return render(request, "about.html", { "myKey":myFunction() })
 
 def contact(request):
     return render(request, "contact.html", {})
