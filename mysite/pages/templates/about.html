@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}About tile{% endblock %}
 
@@ -9,3 +10,8 @@ about page - {{ myKey }}
 
 
 {% endblock %}
+
+<br />
+image is here - static content
+<img src="{% static 'images/cloud-services-1.jpg' %}" />
+
